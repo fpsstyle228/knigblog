@@ -1,0 +1,111 @@
+
+/*общие стли*/
+a {
+    line-height: 1;
+    display: inline-block;
+    color:#669acc;
+    text-decoration:none;
+    cursor: pointer;
+}
+a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #669acc;
+    transition: width .3s ease-in-out;
+}
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+span {
+    font-weight: 300;
+    color: #f58220;
+}
+
+.mlogin {
+    margin: 170px auto 0;
+}
+
+.mregister {
+    margin: 80px auto 0;
+}
+
+.error {
+    margin: 40px auto 0;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 650px;
+    background: #669acc;
+	border-radius: 3px;
+}
+
+.regtext {
+    font-size: 13px;
+    margin-top: 26px;
+    color: black;
+}
+
+	/*конейнер с стилями*/
+.container {
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    background: #fff;
+}
+.container h1 {
+    color: #777;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 13px;
+}
+
+.container label {
+    color: black;
+    font-size: 14px;
+}
+
+#login {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+	border: 1px solid black;
+	padding:15px;
+}
+
+.container form .input,.container input[type=text],.container input[type=password],.container input[type=email] {
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	
+}
+
+
+/*сабмит*/
+
+.button{
+border: solid 1px #669acc;
+	background: #669acc;
+	color: white;
+padding: 7px 12px;
+border-radius: 3px;
+float: right;
+cursor: pointer;
+}
+
+.button:hover
+{
+  -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
